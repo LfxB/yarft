@@ -1,5 +1,7 @@
 # YARFT
 
+![npm](https://img.shields.io/npm/v/yarft.svg?style=for-the-badge)
+
 Yet another react fit text ... component!
 
 ## Features
