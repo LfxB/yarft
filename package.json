@@ -1,0 +1,40 @@
+{
+  "name": "yarft",
+  "version": "1.0.0",
+  "description": "Yet Another React Fit Text...component!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src --out-file index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LfxB/yarft.git"
+  },
+  "keywords": [
+    "react",
+    "fit",
+    "text",
+    "fittext",
+    "textfit"
+  ],
+  "author": "Sam Salinas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LfxB/yarft/issues"
+  },
+  "homepage": "https://github.com/LfxB/yarft#readme",
+  "peerDependencies": {
+    "react": "^16.6.1",
+    "react-dom": "^16.6.3"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
