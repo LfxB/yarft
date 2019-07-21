@@ -54,7 +54,7 @@ function (_React$Component) {
       var fontSize = _this.state.fontSize;
       element.style.fontSize = fontSize + "px";
 
-      while (parent.scrollHeight > parent.clientHeight) {
+      while (parent.scrollHeight > parent.clientHeight || parent.scrollWidth > parent.clientWidth) {
         fontSize = Math.floor(fontSize * 0.95);
         element.style.fontSize = fontSize + "px";
       }

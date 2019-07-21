@@ -40,8 +40,9 @@ const BigHello = () => (
 
 ## Changelog
 
-- [x] Fit text on vertical overflow
-- [ ] Fit text on horizontal overflow
+- [x] 1.0.0 - Fit text on vertical overflow
+- [x] 1.1.0 - Fit text on horizontal overflow
+- [x] 1.1.0 - `windowObject` : new property to allow users to pass a different window to add the resize listeners to.
 - [ ] `parent` : new property to let text fit to a given parent node.
 
 ## Contributing
