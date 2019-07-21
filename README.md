@@ -37,6 +37,7 @@ const BigHello = () => (
 | Properties | Type       | Default       | Description |
  | ---        | ---        | ---           | ---         |
  | `defaultFontSize`  | `Number`   | `200`           | The default font size (in px) the text will be scale down from. |
+ | `windowObject`  | `Object`   | `undefined`           | A window object. Ex: the return value of `window.open(...)`. Useful for popups and iframes. |
 
 ## Changelog
 
