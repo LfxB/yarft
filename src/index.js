@@ -40,6 +40,13 @@ export default class FittedText extends React.Component {
     componentDidMount = () => {
         this.updateText();
 
+        const { windowObject } = this.props;
+
+        if (windowObject) {
+            windowObject.addEventListener("resize", this.updateText);
+            return;
+        }
+
         window.addEventListener("resize", this.updateText);
     }
 
@@ -48,6 +55,13 @@ export default class FittedText extends React.Component {
     }
 
     componentWillUnmount = () => {
+        const { windowObject } = this.props;
+
+        if (windowObject) {
+            windowObject.removeEventListener("resize", this.updateText);
+            return;
+        }
+
         window.removeEventListener("resize", this.updateText);
     }
 

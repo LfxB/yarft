@@ -63,6 +63,13 @@ function (_React$Component) {
     _defineProperty(_assertThisInitialized(_this), "componentDidMount", function () {
       _this.updateText();
 
+      var windowObject = _this.props.windowObject;
+
+      if (windowObject) {
+        windowObject.addEventListener("resize", _this.updateText);
+        return;
+      }
+
       window.addEventListener("resize", _this.updateText);
     });
 
@@ -71,6 +78,13 @@ function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "componentWillUnmount", function () {
+      var windowObject = _this.props.windowObject;
+
+      if (windowObject) {
+        windowObject.removeEventListener("resize", _this.updateText);
+        return;
+      }
+
       window.removeEventListener("resize", _this.updateText);
     });
 
